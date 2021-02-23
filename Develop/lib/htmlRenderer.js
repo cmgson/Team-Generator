@@ -6,17 +6,16 @@ const templatesDir = path.resolve(__dirname, "../templates");
 
 const render = employees => {
   const html = [];
-
   html.push(...employees
-    .filter(employee => employee.getRole() === "Manager")
+    .filter(employees => employees.getRole() === "Manager")
     .map(manager => renderManager(manager))
   );
   html.push(...employees
-    .filter(employee => employee.getRole() === "Engineer")
+    .filter(employees => employees.getRole() === "Engineer")
     .map(engineer => renderEngineer(engineer))
   );
   html.push(...employees
-    .filter(employee => employee.getRole() === "Intern")
+    .filter(employees => employees.getRole() === "Intern")
     .map(intern => renderIntern(intern))
   );
 
