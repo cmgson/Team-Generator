@@ -5,17 +5,19 @@ const fs = require("fs");
 const templatesDir = path.resolve(__dirname, "../templates");
 
 const render = employees => {
+  console.log(this);
+  console.log("is this undefined?" + employees);
   const html = [];
   html.push(...employees
-    .filter(employees => employees.getRole() === "Manager")
+    .filter(employee => employee.getRole() === "Manager")
     .map(manager => renderManager(manager))
   );
   html.push(...employees
-    .filter(employees => employees.getRole() === "Engineer")
+    .filter(employee => employee.getRole() === "Engineer")
     .map(engineer => renderEngineer(engineer))
   );
   html.push(...employees
-    .filter(employees => employees.getRole() === "Intern")
+    .filter(employee => employee.getRole() === "Intern")
     .map(intern => renderIntern(intern))
   );
 

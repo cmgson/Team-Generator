@@ -10,7 +10,7 @@ const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer.js");
-function newTeamMember () {
+ function newTeamMember () {
     inquirer.prompt([
         {
             type: 'input',
@@ -67,7 +67,7 @@ function newTeamMember () {
 
     ]).then((data) =>{
         console.log(data);
-        let newEmployees = [];
+        let newEmployees = '';
         name = data.name;
         id = data.id;
         email = data.email;
@@ -87,22 +87,30 @@ function newTeamMember () {
         };
         // console.log(newEmployees);
         employees.push(newEmployees);
-        console.log(newEmployees);
-        console.log(employees)
-        render(employees);
-        
+        console.log('this is the employees' + employees);
         
 
-        
-        if (data.nextEmployee === true) {
+        if (data.nextEmployee) {
             newTeamMember();
 
-        };   
+        } else {
+            console.log(employees);
+            (function () {
+
+                const htmlContent = render(employees);
+                console.log(htmlContent);
+                fs.writeFile(outputPath, htmlContent, (err) =>
+                err ? console.log(err): console.log("all done success!"));
+                
+            })();
+
+        };
     
-    })
+    });
 
-
+    
 };
+
 
 newTeamMember();
 // Write code to use inquirer to gather information about the development team members,
