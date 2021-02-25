@@ -32,7 +32,17 @@ Input Pertinent information for every team member required through a CLI to prod
 ## <div align ='center'> <a name="installation"></a> **Installation** </div>
 --- 
  
-<ol><li>open command line and run npm i, in order to download dependencies.</li><li>run ```node``` ```app.js```</li></ol>
+<ol><li>open command line and run npm i, in order to download dependencies.</li>
+
+```
+npm i
+```
+<li>run the app.js with node in order to launch app</li>
+
+```
+node app.js
+```
+</ol>
 
 --- 
 
@@ -40,7 +50,10 @@ Input Pertinent information for every team member required through a CLI to prod
 
 --- 
 
-<ol><li>answer required questions for each employee in order to build the team page</li><li>once complete open the team.html file and it will be styled and written ready for deployment</li></ol>
+<ol>
+    <li>answer required questions for each employee in order to build the team page</li>
+    <li>once complete open the team.html file and it will be styled and written ready for deployment</li>
+</ol>
 
 --- 
 
@@ -52,7 +65,8 @@ simply fork the repository and clone it, licence information is in the readme.
 
 --- 
 
-## <div align ='center'> <a name="tests"></a> **Tests** </div>
+## <div align ='center'> <a name="tests"></a> **Tests and Screenshots** </div>
+
 
 --- 
 

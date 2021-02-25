@@ -10,7 +10,9 @@ const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer.js");
+console.log('Start by entering the first team members name.  Then follow prompts in order to complete team formation');
 function newTeamMember() {
+    
   inquirer
     .prompt([
       {
