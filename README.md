@@ -87,7 +87,7 @@ The tests folder that is included test the constructors for each of the division
 
 ## <div align ='center'> **Review and contribute here**</div>
 
-### _Github:_ [cmgson](https://github.com/cmgson)
+### _Github:_ [Team Generator](https://github.com/cmgson/Team-Generator)
 
 
 
