@@ -91,7 +91,7 @@ function newTeamMember() {
         (function () {
           const postRender = render(employees);
           fs.writeFile(outputPath, postRender, (err) =>
-            err ? console.log(err) : console.log("all done success!")
+            err ? console.log(err) : console.log("dah nah nah! dah nah nah! Your Team has been created!")
           );
         })();
       }

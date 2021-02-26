@@ -37,7 +37,7 @@ Input Pertinent information for every team member required through a CLI to prod
 ```
 npm i
 ```
-<li>run the app.js with node in order to launch app</li>
+<li>run the app.js with node in order to launch app.  or just hit npm run.  There is a script set up in the package.json that should handle this if the filepath is correct.</li>
 
 ```
 node app.js
@@ -71,6 +71,13 @@ simply fork the repository and clone it, licence information is in the readme.
 --- 
 
 The tests folder that is included test the constructors for each of the divisions of employees.
+
+[This is a short video demonstration of app](https://drive.google.com/file/d/1JzC0_iPIsdxmfvgiWeomAJM-YDfydAxK/view?usp=sharing)
+
+[demo of npm test phase completion](https://drive.google.com/file/d/1YTYvxeI8wCmpg9DzEogIzBi36I2uCc0n/view)
+
+### <div align ='center'> Shot of page created from CLI </div>
+![example of finished page](Develop/Assets/myteamss.png)
 
 --- 
 

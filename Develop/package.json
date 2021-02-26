@@ -8,7 +8,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jest --verbose test/*"
+    "test": "jest --verbose test/*",
+    "run": "node app.js"
   },
   "repository": {
     "type": "git",
