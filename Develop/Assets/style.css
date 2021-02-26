@@ -1,0 +1,45 @@
+body {
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/dcf34c26120139.5634fe6759783.jpg);
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
+}
+
+.team-heading {
+    font-family: 'SF Sports Night';
+    color: #ce2029;
+    border-bottom: 1px solid tan;
+    padding: 10px;
+    background-image: linear-gradient(180deg,rgb(71, 5, 5), black); 
+    text-shadow: 1px 1px sienna;
+}
+    
+
+h1 {
+    font-size: 100px
+}
+h2 {
+    font-family: 'SF Sports Night';
+    color: #ce2029;
+}
+
+h3 {
+    color: crimson;
+}
+
+.card-header {
+    background-color: black;
+}
+.employee-card {
+    margin: 10px;
+    box-shadow: 3px 3px tan;
+    border: none;
+}
+
+.card-body {
+    background: black;
+}
